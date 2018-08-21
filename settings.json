@@ -1,0 +1,114 @@
+{
+    // 打开全局自动补全
+    // "editor.quickSuggestions": true, 
+    // markdownlint
+    "markdownlint.config": {
+        "default": true,
+        "MD009": false,
+        "MD007": {
+            "indent": 4
+        },
+        "no-hard-tabs": false
+    },
+    // 控制键入时是否应自动显示建议
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    // 针对 [markdown] 语言，配置替代编辑器设置。
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true,
+    },
+    "workbench.colorTheme": "Cobalt2",
+    // 以像素为单位控制字号。
+    "editor.fontSize": 16,
+    // Whether to clear previous output before each run.
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.defaultLanguage": "shellscript",
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        // "python": "cd $dir && python3 $fileName",
+        "python": "python3 $fileName",
+        "shellscript": "bash $fileName",
+    },
+    "code-runner.executorMapByFileExtension": {
+        ".sh": "bash $fileName",
+    },
+    "python.autoComplete.addBrackets": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    //"python.linting.flake8Args": ["--max-line-length=248", "--ignore=F401","--statistics"],
+    "python.linting.flake8Args": [
+        "--max-line-length=248",
+        "--ignore=F401,E401,W292,E402,E265,E261,E262",
+    ],
+    // flake8 --help show --ignore=errors --ignore=F401,E51,W234
+    // 控制何时自动保存已更新文件。接受的值: "off"、"afterDelay"、"onFocusChange" (编辑器失去焦点)、"onWindowChange" (窗口失去焦点)。如果设置为 "afterDelay"，可在 "files.autoSaveDelay" 中配置延迟时间。
+    "files.autoSave": "afterDelay",
+    // 控制在多少毫秒后自动保存更改过的文件。
+    "files.autoSaveDelay": 1000,
+    "python.autoComplete.extraPaths": [
+        "/usr/local/lib/python3.6/site-packages/",
+    ],
+    "terminal.integrated.fontSize": 14,
+    // 控制终端游标的样式。
+    "terminal.integrated.cursorStyle": "underline",
+    // 控制终端光标是否闪烁。
+    "terminal.integrated.cursorBlinking": true,
+    //"editor.wordWrap": "on",
+    "editor.wordWrap": "bounded",
+    "editor.glyphMargin": false, //调试器取消，减少行号宽度
+    "python.pythonPath": "/usr/local/bin/python3",
+    // vim
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "f",
+                "f"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.leader": "<space>",
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "cSpell.userWords": [
+        "Hexacopter",
+        "ioloop",
+        "leds"
+    ],
+    "cSpell.language": "en,en-US,en-GB",
+    "vsicons.dontShowNewVersionMessage": true,
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/_build/html",
+    "restructuredtext.confPath": "${workspaceRoot}",
+    "restructuredtext.updateOnTextChanged": "true",
+    "restructuredtext.updateDelay": 300,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+}

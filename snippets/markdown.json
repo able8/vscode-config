@@ -1,0 +1,120 @@
+{
+	"Insert bold text": {
+		"prefix": "b",
+		"description": "Insert bold text",
+		"body": [
+			"**${1:${TM_SELECTED_TEXT}}**$0"
+		],
+	},
+	"Insert italic text": {
+		"prefix": "i",
+		"body": "*${1:${TM_SELECTED_TEXT}}*$0",
+		"description": "Insert italic text"
+	},
+	"Insert quoted text": {
+		"prefix": "q",
+		"body": "> ${1:${TM_SELECTED_TEXT}}",
+		"description": "Insert quoted text"
+	},
+	"Insert code": {
+		"prefix": "il",
+		"body": "`${1:${TM_SELECTED_TEXT}}`$0",
+		"description": "Insert code"
+	},
+	"Insert code block": {
+		"prefix": "c",
+		"body": [
+			"```${1:sh}",
+			"$0",
+			"```"
+		],
+		"description": "Insert code block"
+	},
+
+	"Insert heading": {
+		"prefix": "h",
+		"body": [
+			"## ${1:text}",
+			"$0",
+		],
+		"description": "Insert heading2"
+	},
+	"Insert heading1": {
+		"prefix": "h1",
+		"body": [
+			"# ${1:text}",
+			"$0",
+		],
+		"description": "Insert heading1"
+	},
+	"Insert heading3": {
+		"prefix": "h3",
+		"body": [
+			"### ${1:text}",
+			"$0",
+		],
+		"description": "Insert heading3"
+	},
+	"Insert heading4": {
+		"prefix": "h4",
+		"body": [
+			"#### ${1:text}",
+			"$0",
+		],
+		"description": "Insert heading4"
+	},
+	"Insert unordered list": {
+		"prefix": "ul",
+		"body": [
+			"- ${1:first}",
+			"- ${2:second}",
+			"$0"
+		],
+		"description": "Insert unordered list"
+	},
+	"Insert ordered list": {
+		"prefix": "ol",
+		"body": [
+			"1. ${1:first}",
+			"2. ${2:second}",
+			"$0"
+		],
+		"description": "Insert ordered list"
+	},
+	"Insert horizontal rule": {
+		"prefix": "hr",
+		"body": "---\n",
+		"description": "Insert horizontal rule"
+	},
+	"Insert link": {
+		"prefix": "a",
+		"body": "[${1:text}](${2:link})$0",
+		"description": "Insert link"
+	},
+	"Insert image": {
+		"prefix": "im",
+		"body": "![${1:alt}](${2:link})$0",
+		"description": "Insert image"
+	},
+	"Insert table2": {
+		"prefix": "ta",
+		"body": [
+			"| ${1:First Header} | ${2:Second Header} |"
+			"| ${3::---:} | ${4::---} |",
+			"| ${5:Content Cell}  | ${6:Content Cell}  |",
+			"$0"
+		],
+		"description": "Insert table2"
+	},
+	"Insert table3": {
+		"prefix": "ta3",
+		"body": [
+			"| ${1:First Header} | ${2:Second Header} | ${3:Third Header} |"
+			"| ${4::---:} | ${5::---} | ${6::---} |",
+			"| ${7:Content Cell}  | ${8:Content Cell} | ${9:Content Cell}  |",
+			"$0"
+		],
+		"description": "Insert table3"
+	},
+
+}
