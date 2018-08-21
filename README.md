@@ -1,6 +1,6 @@
 # VS Code config 
 
-个人[VS Code](https://code.visualstudio.com/) 偏好配置文件，
+个人 [VS Code](https://code.visualstudio.com/) 偏好配置文件，
 用于保存配置，方便多台电脑间同步。
 
 ## How to use
@@ -27,12 +27,12 @@ sh export.sh         # 安装、卸载 插件后，需要重新导出，再push
 
 ## 常用快捷键
 
-| 按键 | 功能 |
+| 按键 | 功能 |
 | --- | --- |
 | cmd + b  | 切换隐藏左边拦  |
 | cmd + t  | 切换隐藏终端 |
 | cmd + j  | 切换 面板 |
-| cmd + `+／-`  | 放大／缩小 |
+| cmd + `+／-`  | 放大／缩小 |
 cmd + p | 快速打开文件
 cmd shift p | 输入命令，如git push
 cmd shift e | 打开左边文件管理器
@@ -40,8 +40,6 @@ cmd shift g | 输入git commit 信息
 cmd shift f | 全局搜索
 cmd shift t | 重新打开关闭的文件
 
-
-  
 ```sh
 # open code with current directory
 code .
@@ -107,7 +105,6 @@ Shift + F12 显示引用    映射为 shift + option + 空格
         "after": [ "<Esc>" ] },
 ],
 
-
 # vim 列编辑 块选择(Visual Block)
 v	    字符选择，将光标经过的字符选择
 V 大写	 行选择，将光标经过的行选择
@@ -121,7 +118,6 @@ r替换，d删除，
 完成后按esc退出模式，再按esc完成所有修改。
 ESC 按两次，会在每行的选定的区域出现插入的内容
 ```
-
 
 ## 资源链接
 
