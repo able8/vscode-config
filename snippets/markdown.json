@@ -99,7 +99,7 @@
 	"Insert table2": {
 		"prefix": "ta",
 		"body": [
-			"| ${1:First Header} | ${2:Second Header} |"
+			"| ${1:First Header} | ${2:Second Header} |",
 			"| ${3::---:} | ${4::---} |",
 			"| ${5:Content Cell}  | ${6:Content Cell}  |",
 			"$0"
@@ -109,7 +109,7 @@
 	"Insert table3": {
 		"prefix": "ta3",
 		"body": [
-			"| ${1:First Header} | ${2:Second Header} | ${3:Third Header} |"
+			"| ${1:First Header} | ${2:Second Header} | ${3:Third Header} |",
 			"| ${4::---:} | ${5::---} | ${6::---} |",
 			"| ${7:Content Cell}  | ${8:Content Cell} | ${9:Content Cell}  |",
 			"$0"
