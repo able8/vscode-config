@@ -1,6 +1,6 @@
 # VS Code config 
 
-个人 [VS Code](https://code.visualstudio.com/) 偏好配置文件，
+个人[VS Code](https://code.visualstudio.com/) 偏好配置文件，
 用于保存配置，方便多台电脑间同步。
 
 ## How to use
