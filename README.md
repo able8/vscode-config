@@ -50,7 +50,7 @@ sh export.sh         # 安装 卸载 插件后，需要重新导出，再push
 ⌘ shift r | 预览markdown文件
 ⌘ shift x | 打开扩展
 ⌘ shift h | 文件中替换
-⌘ + k  v  | 分栏预览markdown文件
+⌘ + k  v  | 分栏预览markdown文件
 ⌘ K ⌘ X   | 修剪尾随空白
 ⌘ K P     | 复制当前文件的路径
 ⌘ K R     | 在Finder中显示当前文件
@@ -80,7 +80,7 @@ Option + Shift + Down | 向下复制行
 Option + 点击 | 插入多个光标  多行编辑
 Option + shift+ 鼠标拖拽 |块选择
 code . | 打开当前目录
-code -r . | 在当前窗口打开当前目录
+code -r . | 在当前窗口打开当前目录
 
 ## 其它
 
