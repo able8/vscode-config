@@ -39,3 +39,4 @@
 		"prefix": "def",
 		"body": "def ${1:fname}(${2:arg}):\n\t${3:pass}$0"
 	}
+}
