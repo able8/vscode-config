@@ -111,5 +111,20 @@
         "command": "-markdown.extension.onOutdentLines",
         "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
-  
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.files.openFileFolder"
+    },
+    {
+        "key": "cmd+o",
+        "command": "-workbench.action.files.openFileFolder"
+    },
+    {
+        "key": "cmd+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    }
 ]

@@ -24,9 +24,11 @@
 	"Insert code block": {
 		"prefix": "c",
 		"body": [
+			"",
 			"```${1:sh}",
 			"$0",
-			"```"
+			"```",
+			"",
 		],
 		"description": "Insert code block"
 	},
@@ -34,7 +36,7 @@
 	"Insert heading": {
 		"prefix": "h",
 		"body": [
-			"## ${1:text}",
+			"## ${1}",
 			"$0",
 		],
 		"description": "Insert heading2"
@@ -42,7 +44,7 @@
 	"Insert heading1": {
 		"prefix": "h1",
 		"body": [
-			"# ${1:text}",
+			"# ${1}",
 			"$0",
 		],
 		"description": "Insert heading1"
@@ -50,7 +52,7 @@
 	"Insert heading3": {
 		"prefix": "h3",
 		"body": [
-			"### ${1:text}",
+			"### ${1}",
 			"$0",
 		],
 		"description": "Insert heading3"
@@ -58,7 +60,7 @@
 	"Insert heading4": {
 		"prefix": "h4",
 		"body": [
-			"#### ${1:text}",
+			"#### ${1}",
 			"$0",
 		],
 		"description": "Insert heading4"
@@ -88,12 +90,12 @@
 	},
 	"Insert link": {
 		"prefix": "a",
-		"body": "[${1:text}](${2:link})$0",
+		"body": "[${1}](${2})$0",
 		"description": "Insert link"
 	},
 	"Insert image": {
 		"prefix": "im",
-		"body": "![${1:alt}](${2:link})$0",
+		"body": "![${1:alt}](${2})$0",
 		"description": "Insert image"
 	},
 	"Insert table2": {
