@@ -61,7 +61,7 @@
     {
         "key": "ctrl+b",
         "command": "cursorLeft",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
+        "when": "editorTextFocus && editorLangId == 'markdown' && vim.mode == Insert'"
     },
     {
         "key": "cmd+i",

@@ -119,7 +119,7 @@ r替换，d删除，
 ESC 按两次，会在每行的选定的区域出现插入的内容
 
 
-vim 正常模式下
+vim 正常模式下:
 ctrl f 向前翻页
 ctrl b 向后翻页
 ```
@@ -128,3 +128,4 @@ ctrl b 向后翻页
 
 - [vscode 快捷键](https://segmentfault.com/a/1190000012811886)
 - [Git 基础 - 远程仓库的使用](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)
+- [vscode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
