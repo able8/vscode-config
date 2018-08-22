@@ -40,6 +40,11 @@
         "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert' "
     },
     {
+        "key": "ctrl+b",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert' "
+    },
+    {
         "key": "cmd+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
