@@ -1,4 +1,4 @@
-# VS Code config 
+# VS Code config
 
 个人[VS Code](https://code.visualstudio.com/) 偏好配置文件，
 用于保存配置，方便多台电脑间同步。
@@ -10,7 +10,7 @@ cd "$HOME/Library/Application Support/Code/User"   # only for macOS
 git init
 git remote add origin https://github.com/able8/vscode-config.git
 git pull origin master
-sh import.sh         # 安装插件
+sh import.sh        # 安装插件
 ```
 
 ## Customizing
@@ -25,70 +25,84 @@ git push -u my-remote master
 sh export.sh         # 安装、卸载 插件后，需要重新导出，再push
 ```
 
+## 资源链接
+
+- [vscode 快捷键](https://segmentfault.com/a/1190000012811886)
+- [Git 基础 - 远程仓库的使用](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)
+- [vscode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+
+
 ## 常用快捷键
 
-| 按键 | 功能 |
-| --- | --- |
-| cmd + b  | 切换隐藏左边拦  |
-| cmd + t  | 切换隐藏终端 |
-| cmd + j  | 切换 面板 |
-| cmd + `+／-`  | 放大／缩小 |
-cmd + p | 快速打开文件
-cmd shift p | 输入命令，如git push
-cmd shift e | 打开左边文件管理器
-cmd shift g | 输入git commit 信息
-cmd shift f | 全局搜索
-cmd shift t | 重新打开关闭的文件
+按键 | 功能
+----- | ---
+⌘ b  | 切换隐藏左边拦
+⌘ t  | 切换隐藏终端
+⌘ j  | 切换 面板
+⌘ `+／-`  | 放大／缩小
+⌘ o | 跳转到某个文件
+⌘ p | 打开文件
+⌘ shift p | 输入命令，如git push, snippet
+⌘ shift e | 打开左边文件管理器
+⌘ shift g | 输入git commit 信息
+⌘ shift f | 全局搜索
+⌘ shift t | 重新打开关闭的文件
+⌘ shift r | 预览markdown文件
+⌘ shift x | 打开扩展
+⌘ shift h | 文件中替换
+⌘ + k  v  | 分栏预览markdown文件
+⌘ K ⌘ X   | 修剪尾随空白
+⌘ K P     | 复制当前文件的路径
+⌘ K R     | 在Finder中显示当前文件
+⌘ K O     | 在新窗口显示当前文件
+⌘ shift k | 删除一行
+⌘ shift u | 打开 输出
+⌘ shift m | 查看错误提示  问题
+⌘ + D | 向下选中相同内容
+⌘ + K  ⌘ + D |移除前一个向下选中相同内容
+⌘ + Enter  |下一行插入
+⌘ + Shift + Enter |上一行插入
+⌘ + Shift + \ | **跳转到匹配的括号**
+⌘ + Up | 跳转至文件开头
+⌘ + Down | 跳转至文件结尾
+⌘ I	| 选择当前行
+⌘ U | 回到上次光标位置
+⌘ X | Cut line (empty selection)
+⌘ C | Copy line (empty selection)
+⌘ / | 注释
+⌘ i | 选择当前行
+⌘K ⌘S | 打开快捷键设置
+ctrl + g  | 跳转至某行
+Option + Up | 向上移动行
+Option + Down | 向下移动行
+Option + Shift + Up | 向上复制行
+Option + Shift + Down | 向下复制行
+Option + 点击 | 插入多个光标  多行编辑
+Option + shift+ 鼠标拖拽 |块选择
+code . | 打开当前目录
+code -r . | 在当前窗口 打开当前目录
 
+## 其它
+
+- git
+
+```py
+cat <<'EOF' >> .zshrc
+alias gcl='git clone'
+alias gcm='git commit -am'
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+alias gpl='git pull'
+alias gph='git push'
+EOF
+source .zshrc
+```
+
+- vscode 设置
 ```sh
-# open code with current directory
-code .
-# open the current directory in the most recently used code window
-code -r .
-cmd /  注释
-cmd p 快速打开文件
-Select current line  cmd i
-cspell check   
-pylint     cmd shift m  查看错误提示
-cmd shif k  删除一行
-
-
-# markdown
-cmd + shift + r   打开预览窗口
-cmd + k  v        侧边栏预览
-
-#  移动代码和快速复制
-alt 上下   移动行      
-alt shift 上下  复制行
-vim v 进入块选择 
-
-cmd+shift+p git push 方便快速推送代码
-cmd+shiff+p snippet  便捷自动补全 
-
-Option + Up 向上移动行
-Option + Down 向下移动行
-Option + Shift + Up 向上复制行
-Option + Shift + Down 向下复制行
-Command + Shift + K 删除行
-
-Option + 点击 插入多个光标  多行编辑
-Command + D 向下选中相同内容
-Command + K Command + D 移除前一个向下选中相同内容
-
-Ctrl + G 跳转至某行
-Command + P 跳转到某个文件
-
-Command + Enter 下一行插入
-Command + Shift + Enter 上一行插入
-Command + Shift + \ 跳转到匹配的括号
-
-Command + Up 跳转至文件开头
-Command + Down 跳转至文件结尾
-
-⌘I	选择当前行
-
 # 转到函数定义处
-F12 跳转到声明位置    
+F12 跳转到声明位置
 按 esc退出速览
 Option + F12 查看具体声明    映射为 shift + 空格
 Shift + F12 显示引用    映射为 shift + option + 空格
@@ -104,7 +118,12 @@ Shift + F12 显示引用    映射为 shift + option + 空格
     {   "before": ["f", "f"],
         "after": [ "<Esc>" ] },
 ],
+```
 
+
+- vim
+
+```js
 # vim 列编辑 块选择(Visual Block)
 v	    字符选择，将光标经过的字符选择
 V 大写	 行选择，将光标经过的行选择
@@ -117,14 +136,14 @@ I       大写光标前前插入，
 r替换，d删除，
 完成后按esc退出模式，再按esc完成所有修改。
 ESC 按两次，会在每行的选定的区域出现插入的内容
- 
+
 多行选择后  J 把所有的行连接起来（变成一行）
 被选择的行后加上点东西: ctrl+v 选择列  $ 行尾巴  A插入
- 
+
 b	跳到前一个单词的开头
 e	跳到下一个单词的结尾
-w	跳到下一个单词的开头 
- 
+w	跳到下一个单词的开头
+
 vim 正常模式下:
 ctrl f 向前翻页
 ctrl b 向后翻页
@@ -141,14 +160,14 @@ able
 able
 able
 
-ta 跳到下一个a 前面    
-fa 跳到下一个a 
+ta 跳到下一个a 前面
+fa 跳到下一个a
 大写的意思相反
 跳转引号  f"  F"    "able"
 
 综合起来
 dt) 一直删除到这行的)    sdfasdfasdf)  )  "asdfasdf"  asdfd }
-另外 懂了跳转键后 那删除或是复制时就不再是以行为单位了 可以指定到某个条件 
+另外 懂了跳转键后 那删除或是复制时就不再是以行为单位了 可以指定到某个条件
 
 ctrl+i 向前跳到前几次光标位置
 ctrl+o 向后跳到后几次光标位置
@@ -179,11 +198,4 @@ guw 光标下的单词变为小写
 gUw 光标下的单词变为大写
 xp 左右交换光标处两字符的位置
 ~ 改变当前光标下字符的大小写
-
 ```
-
-## 资源链接
-
-- [vscode 快捷键](https://segmentfault.com/a/1190000012811886)
-- [Git 基础 - 远程仓库的使用](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)
-- [vscode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
