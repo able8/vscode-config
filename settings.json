@@ -77,17 +77,17 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "f",
-                "f"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-    ],
+    // "vim.visualModeKeyBindings": [
+    //     {
+    //         "before": [
+    //             "f",
+    //             "f"
+    //         ],
+    //         "after": [
+    //             "<Esc>"
+    //         ]
+    //     },
+    // ],
     "vim.insertModeKeyBindings": [
         {
             "before": [

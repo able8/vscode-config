@@ -131,5 +131,10 @@
     {
         "key": "cmd+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-md-shortcut.toggleBold",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
     }
 ]
