@@ -22,7 +22,7 @@ git remote add my-remote https://my.repo.com/my-repo.git
 git add .
 git commit -m "Added some snippets."
 git push -u my-remote master
-sh export.sh         # 安装、卸载 插件后，需要重新导出，再push
+sh export.sh         # 安装 卸载 插件后，需要重新导出，再push
 ```
 
 ## 资源链接
@@ -69,7 +69,7 @@ sh export.sh         # 安装、卸载 插件后，需要重新导出，再push
 ⌘ U | 回到上次光标位置
 ⌘ X | Cut line (empty selection)
 ⌘ C | Copy line (empty selection)
-⌘ / | 注释
+⌘ / | 注释
 ⌘ i | 选择当前行
 ⌘K ⌘S | 打开快捷键设置
 ctrl + g  | 跳转至某行
@@ -79,8 +79,8 @@ Option + Shift + Up | 向上复制行
 Option + Shift + Down | 向下复制行
 Option + 点击 | 插入多个光标  多行编辑
 Option + shift+ 鼠标拖拽 |块选择
-code . | 打开当前目录
-code -r . | 在当前窗口 打开当前目录
+code . | 打开当前目录
+code -r . | 在当前窗口打开当前目录
 
 ## 其它
 
@@ -123,7 +123,7 @@ Shift + F12 显示引用    映射为 shift + option + 空格
 
 - vim
 
-```js
+```
 # vim 列编辑 块选择(Visual Block)
 v	    字符选择，将光标经过的字符选择
 V 大写	 行选择，将光标经过的行选择
