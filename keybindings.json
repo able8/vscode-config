@@ -136,5 +136,10 @@
         "key": "ctrl+b",
         "command": "-md-shortcut.toggleBold",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-extension.vim_cmd+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
     }
 ]
