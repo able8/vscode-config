@@ -1,6 +1,11 @@
 {
     // 打开全局自动补全
     // "editor.quickSuggestions": true, 
+   
+
+    // 控制在活动代码片段内是否禁用快速建议。
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    
     // markdownlint
     "markdownlint.config": {
         "default": true,
