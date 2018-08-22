@@ -31,7 +31,6 @@ sh export.sh         # 安装 卸载 插件后，需要重新导出，再push
 - [Git 基础 - 远程仓库的使用](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)
 - [vscode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
-
 ## 常用快捷键
 
 按键 | 功能
@@ -100,6 +99,7 @@ source .zshrc
 ```
 
 - vscode 设置
+
 ```sh
 # 转到函数定义处
 F12 跳转到声明位置
@@ -120,10 +120,9 @@ Shift + F12 显示引用    映射为 shift + option + 空格
 ],
 ```
 
-
 - vim
 
-```
+```text
 # vim 列编辑 块选择(Visual Block)
 v	    字符选择，将光标经过的字符选择
 V 大写	 行选择，将光标经过的行选择
