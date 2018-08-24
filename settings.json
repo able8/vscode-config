@@ -1,11 +1,15 @@
 {
     // 打开全局自动补全
     // "editor.quickSuggestions": true, 
-   
+
+    // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
+    //  - on
+    //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
+    //  - off
+    "editor.acceptSuggestionOnEnter": "off",
 
     // 控制在活动代码片段内是否禁用快速建议。
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    
     // markdownlint
     "markdownlint.config": {
         "default": true,
@@ -44,11 +48,17 @@
     "code-runner.executorMapByFileExtension": {
         ".sh": "bash $fileName",
     },
-
-
     // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
-    "python.autoComplete.preloadModules": ["sys", "time", "os", "django"],
-
+    "python.autoComplete.preloadModules": [
+        "sys",
+        "time",
+        "os",
+        "django"
+    ],
+    "python.autoComplete.extraPaths": [
+        "/usr/local/lib/python3.6/site-packages/",
+        "${workspaceFolder}",
+    ],
     "python.autoComplete.addBrackets": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
@@ -64,9 +74,7 @@
     "files.autoSave": "afterDelay",
     // 控制在多少毫秒后自动保存更改过的文件。
     "files.autoSaveDelay": 1000,
-    "python.autoComplete.extraPaths": [
-        "/usr/local/lib/python3.6/site-packages/",
-    ],
+    
     "terminal.integrated.fontSize": 14,
     // 控制终端游标的样式。
     "terminal.integrated.cursorStyle": "underline",
@@ -108,12 +116,6 @@
     "window.zoomLevel": -1,
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
-    "cSpell.userWords": [
-        "Hexacopter",
-        "ioloop",
-        "leds"
-    ],
-    "cSpell.language": "en,en-US,en-GB",
     "vsicons.dontShowNewVersionMessage": true,
     "restructuredtext.builtDocumentationPath": "${workspaceRoot}/_build/html",
     "restructuredtext.confPath": "${workspaceRoot}",

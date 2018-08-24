@@ -72,6 +72,8 @@ sh export.sh         # 安装 卸载 插件后，需要重新导出，再push
 ⌘ i | 选择当前行
 ⌘K ⌘S | 打开快捷键设置
 ctrl + g  | 跳转至某行
+Option + Cmd  + [ | 折叠代码
+Option + Cmd  + ] | 展开代码
 Option + Up | 向上移动行
 Option + Down | 向下移动行
 Option + Shift + Up | 向上复制行
@@ -118,6 +120,10 @@ Shift + F12 显示引用    映射为 shift + option + 空格
     {   "before": ["f", "f"],
         "after": [ "<Esc>" ] },
 ],
+
+# vscode  md 插入导航目录
+- []()  自动TOC
+ysiw  '  用引号包围
 ```
 
 - vim
@@ -197,4 +203,17 @@ guw 光标下的单词变为小写
 gUw 光标下的单词变为大写
 xp 左右交换光标处两字符的位置
 ~ 改变当前光标下字符的大小写
+
+插入模式中删除操作
+^U 删除当前行
+^H 删除前一个字符
+^W 删除前一个词
+
+normal模式下
+u   撤销上一步的操作
+Ctrl+r 恢复上一步被撤销的操作
+
+.	重复上一个操作
+
+
 ```
