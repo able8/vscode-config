@@ -1,13 +1,24 @@
 {
+    "workbench.colorCustomizations": {
+        // "activityBar.background": "#00AA00"
+        "editor.selectionHighlightBorder": "#d9d9d9",
+        "editor.selectionBackground": "#008ae6",
+    },
     // 打开全局自动补全
-    // "editor.quickSuggestions": true, 
-
+    // "editor.quickSuggestions": true,
+    // 控制编辑器是否自动格式化粘贴的内容。格式化程序必须可用，并且能针对文档中的某一范围进行格式化。
+    "editor.formatOnPaste": true,
+    // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true,
+    // 控制编辑器在键入一行后是否自动格式化该行。
+    "editor.formatOnType": true,
+    // 启用后，将在保存文件时剪裁尾随空格。
+    "files.trimTrailingWhitespace": true,
     // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
     //  - on
     //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
     //  - off
     "editor.acceptSuggestionOnEnter": "off",
-
     // 控制在活动代码片段内是否禁用快速建议。
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     // markdownlint
@@ -72,9 +83,8 @@
     // flake8 --help show --ignore=errors --ignore=F401,E51,W234
     // 控制何时自动保存已更新文件。接受的值: "off"、"afterDelay"、"onFocusChange" (编辑器失去焦点)、"onWindowChange" (窗口失去焦点)。如果设置为 "afterDelay"，可在 "files.autoSaveDelay" 中配置延迟时间。
     "files.autoSave": "afterDelay",
-    // 控制在多少毫秒后自动保存更改过的文件。
+    // 控制在多少 毫秒 后自动保存更改过的文件。
     "files.autoSaveDelay": 1000,
-    
     "terminal.integrated.fontSize": 14,
     // 控制终端游标的样式。
     "terminal.integrated.cursorStyle": "underline",
