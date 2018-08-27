@@ -215,3 +215,9 @@ Shift + F12 显示引用    映射为 shift + option + 空格
 - `[]()`  自动TOC
 - 用引号包围 `ysiw'`    hello, world
 - 将 visual 和 normal 模式下的 tab 改为 esc, 用于退出选择
+
+- inner word
+    - cw 是 change word 修改光标后面一个单词，如果光标在单词中间的话，用ciw， inner，修改整个单词
+    - yw 也是同理， yiw 复制整个单词，即使光标在单词中间
+    - cc 修改整行
+    - cw 会将修改的单词放到粘贴板中，你无法粘贴之前复制的。这件解决，viwp 即 v visual i inner w word  p  paste
