@@ -59,6 +59,7 @@
         },
         "code-runner.executorMapByFileExtension": {
                 ".sh": "bash $fileName",
+                ".html": "open $fileName",
         },
         // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
         "python.autoComplete.preloadModules": [
@@ -83,9 +84,9 @@
         ],
         // flake8 --help show --ignore=errors --ignore=F401,E51,W234
         // 控制何时自动保存已更新文件。接受的值: "off"、"afterDelay"、"onFocusChange" (编辑器失去焦点)、"onWindowChange" (窗口失去焦点)。如果设置为 "afterDelay"，可在 "files.autoSaveDelay" 中配置延迟时间。
-        "files.autoSave": "afterDelay",
+        "files.autoSave": "onFocusChange",
         // 控制在多少 毫秒 后自动保存更改过的文件。
-        "files.autoSaveDelay": 1000,
+        // "files.autoSaveDelay": 3000,
         "terminal.integrated.fontSize": 14,
         // 控制终端游标的样式。
         "terminal.integrated.cursorStyle": "underline",
@@ -133,7 +134,7 @@
                 },
         ],
         "vim.leader": "<space>",
-        "window.zoomLevel": -1,
+        "window.zoomLevel": 0,
         "workbench.iconTheme": "vscode-icons",
         "editor.minimap.enabled": false,
         "vsicons.dontShowNewVersionMessage": true,
