@@ -56,6 +56,7 @@
                 // "python": "cd $dir && python3 $fileName",
                 "python": "python3 $fileName",
                 "shellscript": "bash $fileName",
+                "javascript": "node $fileName",
         },
         "code-runner.executorMapByFileExtension": {
                 ".sh": "bash $fileName",
