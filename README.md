@@ -102,6 +102,12 @@ EOF
 source .zshrc
 ```
 
+```
+# fatal: remote origin already exists.
+git remote rm origin
+git remote add origin https://github.com/able8/vscode-config.git
+```
+
 ## VScode 及 Vim 操作
 
 键     | 操作
@@ -200,6 +206,9 @@ fa 跳到下一个a
 dt) 一直删除到这行的)    sdfasdfasdf)  )  "asdfasdf"  asdfd }
 另外 懂了跳转键后 那删除或是复制时就不再是以行为单位了 可以指定到某个条件
 
+zz 让光标所杂的行居屏幕中央
+zt 让光标所杂的行居屏幕最上一行 t=top
+zb 让光标所杂的行居屏幕最下一行 b=bottom
 ```
 
 - 转到函数定义处
