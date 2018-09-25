@@ -108,6 +108,30 @@ git remote rm origin
 git remote add origin https://github.com/able8/vscode-config.git
 ```
 
+add: 提交
+update：更新
+remove：移动
+delete：删除
+feature: 功能
+change：修改
+fix：修复bug
+
+init\ fix typo\  update readme\  first commit
+init project\ finish\
+change xxx \ add funcs os utils\ change func name\
+remove\ fix syntax error\ add flake8\ fix log level
+fix celery config\ add health check\ fix config\add gitlab-ci
+
+统计常用单词
+git log --oneline | tr -cs "[a-z][A-Z]" "\n" | tr A-Z a-z | sort | uniq -c | sort -k1nr -k2 | head -n 300
+
+分支名
+feature-user-sense\test-
+feature-get-vocab-by-ids\feature-update-vocab
+feature、 bugfix、refactor三种类型，即新功能开发、bug修复和代码重构
+
+
+
 ## VScode 及 Vim 操作
 
 键     | 操作
