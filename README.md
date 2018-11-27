@@ -254,3 +254,9 @@ Shift + F12 显示引用    映射为 shift + option + 空格
     - yw 也是同理， yiw 复制整个单词，即使光标在单词中间
     - cc 修改整行
     - cw 会将修改的单词放到粘贴板中，你无法粘贴之前复制的。这件解决，viwp 即 v visual i inner w word  p  paste
+
+## Backup iterm2-settings
+
+`cp ~/Library/Preferences/com.googlecode.iterm2.plist .`
+
+In `iTerm > Preferences` click on `Save Settings to Folder`
