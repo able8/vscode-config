@@ -91,13 +91,14 @@ code -r . | 在当前窗口打开当前目录
 
 ```py
 cat <<'EOF' >> .zshrc
-alias gcl='git clone'
-alias gcm='git commit -am'
+alias gc='git clone'
+alias ga='git add .'
+alias gm='git add . && git commit -m'
 alias gs='git status'
-alias gl='git log'
+alias gg='git log'
 alias gd='git diff'
-alias gpl='git pull'
-alias gph='git push'
+alias gl='git pull'
+alias gp='echo git push.. && git push'
 EOF
 source .zshrc
 ```
