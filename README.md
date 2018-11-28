@@ -256,8 +256,40 @@ Shift + F12 显示引用    映射为 shift + option + 空格
     - cc 修改整行
     - cw 会将修改的单词放到粘贴板中，你无法粘贴之前复制的。这件解决，viwp 即 v visual i inner w word  p  paste
 
-## Backup iterm2-settings
+## tmux and iterm
+
+### Backup iterm2-settings
 
 `cp ~/Library/Preferences/com.googlecode.iterm2.plist .`
 
 In `iTerm > Preferences` click on `Save Settings to Folder`
+
+### tmux 快捷键
+
+tmux ls # 查看所有会话，提倡使用简写形式
+tmux a # 默认进入第一个会话
+tmux a -t demo # 进入到名称为demo的会话开
+tmux kill-server # 关闭服务器，所有的会话都将关闭
+
+d  断开当前会话，会话在后台运行
+c  创建新窗口
+s  列出所有会话
+w  列出所有窗口
+n  后一个窗口
+p  前一个窗口
+l  前后窗口间互相切换 ; 也是
+f  查找窗口
+,  重命名当前窗口
+.  修改当前窗口编号，相当于窗口重新排序
+x  关闭当前窗口
+f  在所有窗口中查找指定文本
+z  切换窗格最大化/最小化
+t  显示时钟
+Space  在预置的面板布局中循环切换
+Ctrl+o 顺时针旋转当前窗口的面板
+
+tmux中复制模式：
+1. 输入 [ 进入复制模式
+2. 按下 空格键 开始复制，移动光标选择复制区域
+3. 按下 回车键 复制选中文本并退出复制模式
+4. 按下 ] 粘贴文本
