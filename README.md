@@ -293,3 +293,21 @@ tmux中复制模式：
 2. 按下 空格键 开始复制，移动光标选择复制区域
 3. 按下 回车键 复制选中文本并退出复制模式
 4. 按下 ] 粘贴文本
+
+#### tmux 分割线显示异常问题
+tmux cannot display vertical line when split vertical panel
+iterm2  preference - profile - text - Unicode unchecked Ambious...
+
+#### tmux disable confirmation prompt on kill-window
+bind-key x kill-pane
+
+#### iterm 设置快捷键
+in iTerm2, you can map shortcuts to hex codes that get sent into the terminal.
+Goto iTerm2 Preferences -> Keys.
+ In Global Shortcut Keys, click the + and add type your desired shortcut like the cmd+1, which will be captured. Then select "Send Hex Code". In the box that appears, type the hex codes that you want sent to tmux separated by spaces. Ctrl-B is 0x02, so for "Ctrl-B 1", type "0x02 0x31". See here for more hex codes:
+ http://ascii-table.com/control-chars.php
+http://ascii-table.com/index.php
+http://ascii-table.com/index.php
+
+cmd+s   send  0x02 模拟 tmux 前缀 ctrl+b
+0x12 ctrl + C 改用cmd g
