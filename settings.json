@@ -141,7 +141,7 @@
                 },
         ],
         "vim.leader": "<space>",
-        "window.zoomLevel": 0,
+        "window.zoomLevel": -1,
         "workbench.iconTheme": "vscode-icons",
         "editor.minimap.enabled": false,
         "vsicons.dontShowNewVersionMessage": true,
@@ -170,4 +170,6 @@
         "prettier.trailingComma": "all",
         "prettier.singleQuote": true,
         "prettier.printWidth": 100,
+        "prettier.parser":"flow",
+        "editor.wordWrapColumn": 100,
 }
