@@ -19,6 +19,7 @@
     // "editor.formatOnType": true,
     // 启用后，将在保存文件时剪裁尾随空格。
     // "files.trimTrailingWhitespace": true,
+
     // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
     //  - on
     //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
@@ -133,6 +134,13 @@
     "restructuredtext.confPath": "${workspaceRoot}",
     "restructuredtext.updateOnTextChanged": "true",
     "restructuredtext.updateDelay": 300,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    // "restructuredtext.builtDocumentationPath": "${workspaceRoot}/_build/html",
+    // "restructuredtext.confPath": "${workspaceRoot}",
+    // "restructuredtext.updateOnTextChanged": "true",
+    // "restructuredtext.updateDelay": 300,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "explorer.confirmDelete": false,
