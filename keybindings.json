@@ -45,10 +45,10 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert' "
     },
     {
-        "key": "cmd+t",
+        "key": "ctrl+cmd+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
-    // markdown   
+    // markdown
     // {
     //     "key": "cmd+shift+r",
     //     "command": "markdown.showPreview",
@@ -141,5 +141,13 @@
         "key": "cmd+c",
         "command": "-extension.vim_cmd+c",
         "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
+    },
+    {
+        "key": "cmd+t",
+        "command": "terminal.open"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "-terminal.open"
     }
 ]

@@ -1,175 +1,177 @@
 {
-        "editor.renderControlCharacters":true,
-        "workbench.colorCustomizations": {
-                // "activityBar.background": "#00AA00"
-                "editor.selectionHighlightBorder": "#d9d9d9",
-                "editor.selectionBackground": "#008ae6",
-                "editorBracketMatch.border": "#f10b0bec",
-        },
-        "markdown-toc.depthTo": 2,
-        // 其他建议上方显示代码片段建议
-        "editor.snippetSuggestions": "top",
-
-        // 打开全局自动补全
-        // "editor.quickSuggestions": true,
-        // 控制编辑器是否自动格式化粘贴的内容。格式化程序必须可用，并且能针对文档中的某一范围进行格式化。
-        "editor.formatOnPaste": true,
-        // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
-        // "editor.formatOnSave": true,
-        // 控制编辑器在键入一行后是否自动格式化该行。
-        // "editor.formatOnType": true,
-        // 启用后，将在保存文件时剪裁尾随空格。
-        "files.trimTrailingWhitespace": true,
-        // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
-        //  - on
-        //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
-        //  - off
-        "editor.acceptSuggestionOnEnter": "off",
-        // 控制在活动代码片段内是否禁用快速建议。
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        // // markdownlint
-        // "markdownlint.config": {
-        //         "default": true,
-        //         "MD009": false,
-        //         "MD022": false,
-        //         "MD007": {
-        //                 "indent": 4
-        //         },
-        //         "no-hard-tabs": false
-        // },
-        // 控制键入时是否应自动显示建议
-        "editor.quickSuggestions": {
-                "other": true,
-                "comments": true,
-                "strings": true
-        },
-        // 针对 [markdown] 语言，配置替代编辑器设置。
-        "[markdown]": {
-                "editor.wordWrap": "on",
-                "editor.quickSuggestions": true,
-        },
-        "workbench.colorTheme": "Cobalt2",
-        // 以像素为单位控制字号。
-        "editor.fontSize": 15,
-        // Whether to clear previous output before each run.
-        "code-runner.clearPreviousOutput": true,
-        "code-runner.saveAllFilesBeforeRun": true,
-        "code-runner.defaultLanguage": "shellscript",
-        "code-runner.runInTerminal": true,
-        "code-runner.fileDirectoryAsCwd": true,
-        "code-runner.ignoreSelection": true,
-        "code-runner.executorMap": {
-                "python": "cd $dir && python3 $fileName",
-                // "python": "python3 $fileName",
-                "shellscript": "bash $fileName",
-                "javascript": "node $fileName",
-        },
-        "code-runner.executorMapByFileExtension": {
-                ".sh": "bash $fileName",
-                ".html": "open $fileName",
-        },
-        // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
-        // "python.autoComplete.preloadModules": [
-        //         "sys",
-        //         "time",
-        //         "os",
-        //         "django"
-        // ],
-        "python.autoComplete.extraPaths": [
-                "/usr/local/lib/python3.6/site-packages/",
-                "${workspaceFolder}",
-        ],
-        "python.autoComplete.addBrackets": true,
-        "python.linting.enabled": false,
-        "python.linting.pylintEnabled": false,
-        "python.linting.flake8Enabled": true,
-        "python.formatting.provider": "autopep8",
-        //"python.linting.flake8Args": ["--max-line-length=248", "--ignore=F401","--statistics"],
-        "python.linting.flake8Args": [
-                "--max-line-length=248",
-                "--ignore=F401,E401,W292,E402,E265,E261,E262",
-        ],
-        // flake8 --help show --ignore=errors --ignore=F401,E51,W234
-        // 控制何时自动保存已更新文件。接受的值: "off"、"afterDelay"、"onFocusChange" (编辑器失去焦点)、"onWindowChange" (窗口失去焦点)。如果设置为 "afterDelay"，可在 "files.autoSaveDelay" 中配置延迟时间。
-        "files.autoSave": "onFocusChange",
-        // 控制在多少 毫秒 后自动保存更改过的文件。
-        // "files.autoSaveDelay": 3000,
-        "terminal.integrated.fontSize": 14,
-        // 控制终端游标的样式。
-        "terminal.integrated.cursorStyle": "underline",
-        // 控制终端光标是否闪烁。
-        "terminal.integrated.cursorBlinking": true,
-        //"editor.wordWrap": "on",
-        "editor.wordWrap": "bounded",
-        "editor.glyphMargin": false, //调试器取消，减少行号宽度
-        "python.pythonPath": "/usr/local/bin/python3",
-        // vim
-        "vim.easymotion": true,
-        "vim.incsearch": true,
-        "vim.useSystemClipboard": true,
-        "vim.useCtrlKeys": true,
-        "vim.hlsearch": true,
-        "vim.visualModeKeyBindings": [
-                {
-                        "before": [
-                                "<tab>"
-                        ],
-                        "after": [
-                                "<Esc>"
-                        ]
-                }
-        ],
-        "vim.normalModeKeyBindings": [
-                {
-                        "before": [
-                                "<tab>"
-                        ],
-                        "after": [
-                                "<Esc>"
-                        ]
-                }
-        ],
-        "vim.insertModeKeyBindings": [
-                {
-                        "before": [
-                                "k",
-                                "k"
-                        ],
-                        "after": [
-                                "<Esc>"
-                        ]
-                },
-        ],
-        "vim.leader": "<space>",
-        "window.zoomLevel": -1,
-        "workbench.iconTheme": "vscode-icons",
-        "editor.minimap.enabled": false,
-        "vsicons.dontShowNewVersionMessage": true,
-        "restructuredtext.builtDocumentationPath": "${workspaceRoot}/_build/html",
-        "restructuredtext.confPath": "${workspaceRoot}",
-        "restructuredtext.updateOnTextChanged": "true",
-        "restructuredtext.updateDelay": 300,
-        "git.enableSmartCommit": true,
-        "git.confirmSync": false,
-        "explorer.confirmDelete": false,
-        //使用eslint规则重新格式化代码
-        "eslint.autoFixOnSave": true,
-        "eslint.validate": [
-                "javascript",
-                "javascriptreact",
-                "html",
-                "jsx",
-                "vue",
-                {
-                        "language": "html",
-                        "autoFix": true
-                }
-        ],
-        // prettier
-        "prettier.tabWidth": 4,
-        "prettier.trailingComma": "all",
-        "prettier.singleQuote": true,
-        "prettier.printWidth": 100,
-        "prettier.parser":"flow",
-        "editor.wordWrapColumn": 100,
+    "editor.renderControlCharacters": true,
+    "workbench.colorCustomizations": {
+        // "activityBar.background": "#00AA00"
+        "editor.selectionHighlightBorder": "#d9d9d9",
+        "editor.selectionBackground": "#008ae6",
+        "editorBracketMatch.border": "#f10b0bec"
+    },
+    "markdown-toc.depthTo": 2,
+    // 其他建议上方显示代码片段建议
+    "editor.snippetSuggestions": "top",
+    // 打开全局自动补全
+    // "editor.quickSuggestions": true,
+    // 控制编辑器是否自动格式化粘贴的内容。格式化程序必须可用，并且能针对文档中的某一范围进行格式化。
+    "editor.formatOnPaste": true,
+    // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true,
+    // 控制编辑器在键入一行后是否自动格式化该行。
+    // "editor.formatOnType": true,
+    // 启用后，将在保存文件时剪裁尾随空格。
+    // "files.trimTrailingWhitespace": true,
+    // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
+    //  - on
+    //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
+    //  - off
+    "editor.acceptSuggestionOnEnter": "off",
+    // 控制在活动代码片段内是否禁用快速建议。
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // // markdownlint
+    // "markdownlint.config": {
+    //         "default": true,
+    //         "MD009": false,
+    //         "MD022": false,
+    //         "MD007": {
+    //                 "indent": 4
+    //         },
+    //         "no-hard-tabs": false
+    // },
+    // 控制键入时是否应自动显示建议
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    // 针对 [markdown] 语言，配置替代编辑器设置。
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+    "workbench.colorTheme": "Cobalt2",
+    // 以像素为单位控制字号。
+    "editor.fontSize": 15,
+    // Whether to clear previous output before each run.
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.defaultLanguage": "shellscript",
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        "python": "cd $dir && python3 $fileName",
+        // "python": "python3 $fileName",
+        "shellscript": "bash $fileName",
+        "javascript": "node $fileName"
+    },
+    "code-runner.executorMapByFileExtension": {
+        ".sh": "bash $fileName",
+        ".html": "open $fileName"
+    },
+    // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
+    // "python.autoComplete.preloadModules": [
+    //         "sys",
+    //         "time",
+    //         "os",
+    //         "django"
+    // ],
+    "python.autoComplete.extraPaths": [
+        "/usr/local/lib/python3.6/site-packages/",
+        "${workspaceFolder}"
+    ],
+    "python.autoComplete.addBrackets": true,
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "autopep8",
+    //"python.linting.flake8Args": ["--max-line-length=248", "--ignore=F401","--statistics"],
+    "python.linting.flake8Args": [
+        "--max-line-length=248",
+        "--ignore=F401,E401,W292,E402,E265,E261,E262"
+    ],
+    // flake8 --help show --ignore=errors --ignore=F401,E51,W234
+    // 控制何时自动保存已更新文件。接受的值: "off"、"afterDelay"、"onFocusChange" (编辑器失去焦点)、"onWindowChange" (窗口失去焦点)。如果设置为 "afterDelay"，可在 "files.autoSaveDelay" 中配置延迟时间。
+    "files.autoSave": "onFocusChange",
+    // 控制在多少 毫秒 后自动保存更改过的文件。
+    // "files.autoSaveDelay": 3000,
+    "terminal.integrated.fontSize": 14,
+    // 控制终端游标的样式。
+    "terminal.integrated.cursorStyle": "underline",
+    // 控制终端光标是否闪烁。
+    "terminal.integrated.cursorBlinking": true,
+    //"editor.wordWrap": "on",
+    "editor.wordWrap": "bounded",
+    "editor.glyphMargin": false, //调试器取消，减少行号宽度
+    "python.pythonPath": "/usr/local/bin/python3",
+    // vim
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/_build/html",
+    "restructuredtext.confPath": "${workspaceRoot}",
+    "restructuredtext.updateOnTextChanged": "true",
+    "restructuredtext.updateDelay": 300,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    //使用eslint规则重新格式化代码
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "jsx",
+        "vue",
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    // prettier
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.parser": "flow",
+    "editor.wordWrapColumn": 100,
+    "prettier.disableLanguages": ["yaml"],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "go.formatTool": "goimports",
+    "[yaml]": {
+        "editor.formatOnSave": false
+    }
 }
